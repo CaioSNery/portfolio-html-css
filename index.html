@@ -4,68 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Caio Nery</title>
+  <title>Portfólio Caio Nery | Desenvolvedor Backend C# .NET</title>
+  <meta name="description" content="Portfólio de Caio Nery, desenvolvedor backend júnior, especializado em C#, .NET, ASP.NET Core, APIs REST e Azure. Confira meus projetos e entre em contato.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>👋 Olá, eu sou o Caio Nery</h1>
+    <h1>👋 Olá, eu sou Caio Nery</h1>
     <p>Desenvolvedor Backend Júnior | C# | .NET | ASP.NET Core | SQL Server | Azure</p>
   </header>
 
   <main>
-    <section class="about">
+    <!-- Seção Sobre Mim -->
+    <section class="about" aria-label="Sobre o desenvolvedor">
       <h2>Sobre mim</h2>
       <p>
-        Sou desenvolvedor backend focado em criar soluções com qualidade e boas práticas,
-        aplicando SOLID, Clean Code e Domain-Driven Design. Estou sempre em aprendizado e construindo
-        projetos que unem C#, .NET, APIs REST e Azure.
+        Olá! Sou <strong>Caio Nery</strong>, desenvolvedor backend apaixonado por criar soluções escaláveis e de alta qualidade.
+        Aplicando princípios como <abbr title="Single Responsibility, Open/Closed, Liskov, Interface Segregation, Dependency Inversion">SOLID</abbr>,
+        <strong>Clean Code</strong> e <strong>Domain-Driven Design (DDD)</strong>, busco transformar ideias em sistemas eficientes.
       </p>
+      <p>
+        Desenvolvo projetos utilizando <strong>C#</strong>, <strong>.NET</strong>, <strong>APIs REST</strong> e <strong>Azure</strong>,
+        sempre com foco em boas práticas e soluções reais para problemas complexos.
+      </p>
+      <div class="about-cta">
+        <a href="#projects" class="btn">Ver meus projetos</a>
+        <a href="/docs/CaioNery_CV.pdf" download class="btn btn-cv">Baixar CV</a>
+      </div>
     </section>
 
-    <section class="projects">
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects" aria-label="Projetos em destaque">
       <h2>🚀 Projetos em Destaque</h2>
       <div class="cards">
 
-        <div class="card">
+        <article class="card">
           <h3>🍴 Store-DDD</h3>
-          <p>API RESTful de gerenciamento de pedidos, clientes e produtos, estruturada com Domain-Driven Design (DDD),
-            utilizando validações Fail Fast, integração com serviços externos e foco em escalabilidade e manutenção.</p>
-          <a href="https://github.com/CaioSNery/Store-DDD" target="_blank">Ver no GitHub</a>
-        </div>
+          <p>API RESTful de gerenciamento de pedidos, clientes e produtos, estruturada com Domain-Driven Design (DDD), validações Fail Fast e foco em escalabilidade.</p>
+          <a href="https://github.com/CaioSNery/Store-DDD" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
 
-        <div class="card">
+        <article class="card">
+          <h3>💳 Payment Subscriptions</h3>
+          <p>Gerenciamento de assinaturas com diferentes tipos de pagamento: Boleto, PayPal e Cartão de Crédito.</p>
+          <a href="https://github.com/CaioSNery/Payment-DDD" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>💵 Conta Bancária API</h3>
+          <p>API para gestão de contas bancárias, permitindo depósitos, saques e transferências via PIX.</p>
+          <a href="https://github.com/CaioSNery/ContaBancaria" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
           <h3>🔬 Consultorio API</h3>
           <p>API para gestão de consultas, pacientes e profissionais com autenticação JWT.</p>
-          <a href="https://github.com/CaioSNery/ConsultorioApi" target="_blank">Ver no GitHub</a>
-        </div>
+          <a href="https://github.com/CaioSNery/ConsultorioApi" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
 
-        <div class="card">
-          <h3>📦 E-commerce API</h3>
-          <p>API simples de e-commerce com produtos, categorias, usuários e pedidos.</p>
-          <a href="https://github.com/CaioSNery/EcommerceApi" target="_blank">Ver no GitHub</a>
-        </div>
-
-        <div class="card">
-          <h3>💈 BarberScheduling</h3>
-          <p> Agendamentos do dia, data específica, marcação, cadastro de cliente. Tecnologias usadas: WhatsApp,
-            AutoMapper, EF Core, ASP.NET Core.</p>
-          <a href="https://github.com/CaioSNery/Barber-Scheduling" target="_blank">Ver no GitHub</a>
-        </div>
-
-        <div class="card">
-          <h3>💳 Payment Subscriptions</h3>
-          <p> Gerenciamento de assinaturas, permitindo criar uma inscrição a partir de diferentes tipos de
-            pagamento: Boleto - PayPal - Cartão de Crédito</p>
-          <a href="https://github.com/CaioSNery/Payment-DDD" target="_blank">Ver no GitHub</a>
-        </div>
-
-        <div class="card">
+        <article class="card">
           <h3>📽️ Stream API</h3>
-          <p>API de streaming fictícia com controle de assinatura, visualização e envio de email após cadastro</p>
-          <a href="https://github.com/CaioSNery/StreamAPI" target="_blank">Ver no GitHub</a>
-        </div>
+          <p>API de streaming fictícia com controle de assinaturas, visualizações e envio de emails após cadastro.</p>
+          <a href="https://github.com/CaioSNery/StreamAPI" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>📦 E-commerce API</h3>
+          <p>API de e-commerce com produtos, categorias, usuários e pedidos, pronta para integração com frontend.</p>
+          <a href="https://github.com/CaioSNery/EcommerceApi" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>💈 BarberScheduling</h3>
+          <p>Gestão de agendamentos, clientes e datas, usando WhatsApp, AutoMapper, EF Core e ASP.NET Core.</p>
+          <a href="https://github.com/CaioSNery/Barber-Scheduling" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>💊 Farmacia API</h3>
+          <p>API para gestão de farmácias com cadastro de medicamentos, controle de estoque e vendas.</p>
+          <a href="https://github.com/CaioSNery/FarmaciaAPI" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </article>
 
       </div>
     </section>
@@ -74,8 +94,8 @@
   <footer>
     <p>📬 Contato:
       <a href="mailto:caionery40@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/caio-nery-csharp/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/CaioSNery" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/caio-nery-csharp/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/CaioSNery" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
     <p>✨ “Decifrando hieróglifos do código, um commit de cada vez.” 🏺</p>
   </footer>
